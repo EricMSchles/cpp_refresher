@@ -1,0 +1,34 @@
+
+Code:
+#include <iostream>
+ 
+int add(int x, int y)
+{
+    return x + y;
+}
+ 
+int multiply(int z, int w)
+{
+    return z * w;
+}
+ 
+int main()
+{
+    using namespace std;
+    cout << add(4, 5) << endl; // evalutes 4 + 5
+    cout << add(3, 6) << endl; // evalues 3 + 6
+    cout << add(1, 8) << endl; // evalues 1 + 8
+ 
+    int a = 3;
+    int b = 5;
+    cout << add(a, b) << endl; // evaluates 3 + 5
+ 
+    cout << add(1, multiply(2, 3)) << endl; // evalues 1 + (2 * 3)
+    cout << add(1, add(2, 3)) << endl; // evalues 1 + (2 + 3)
+    return 0;
+
+What the compiler does to evaulate this code:
+When the CPU tries to call function add(), it assigns x = 1, and y = multiply(2, 3). y is not an integer, it is a function call that needs to be resolved. So before the CPU calls add(), it calls multiply() where z = 2 and w = 3. multiply(2, 3) produces the value of 6, which is assigned to add()’s parameter y. Since x = 1 and y = 6, add(1, 6) is called, which evaluates to 7. The value of 7 is passed to cout.
+
+This explaination comes from: http://www.learncpp.com/cpp-tutorial/14-a-first-look-at-functions/
+
