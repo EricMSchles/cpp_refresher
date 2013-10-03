@@ -1,0 +1,23 @@
+What values does this program print?
+program:
+
+int x = 5;
+x = x - 2;
+cout << x << endl; #1
+
+int y = x;
+cout << y << endl; #2
+
+cout << x + y << endl; #3
+
+cout << x << endl; #4
+
+int z;
+cout << z << endl; #5
+
+#1: 3
+#2: 3
+#3: 6
+#4: 3
+#5: ?? - we have no idea because z is uninitialized
+
