@@ -1,0 +1,16 @@
+1) What is the difference between a statement and an expression?
+
+A statement in c++ is the smallest independent unit in the language.  In human language, it is equivalent to a sentence.  All statements are terminated with a semicolon.
+
+An expression is a mathematical entity that evaluates to a value.  For example, in math, the expression 2+3 evaluates to 5.  
+
+2) What is the difference between a function and a library?
+
+Libraries are groups of functions that have been packaged together for reuse in many different programs.  Libraries are often used to extend the functionality of a given language.  It is best to keep the core of any programming language to a minimum, for efficiency and ease of use reasons.  The libraries however are typically necessary as more functionality is needed for industry level programming.
+
+A function is a collection of statements that executes sequentially.  Every C++ program must contain a special function called main().  When a C++ program is run, execution starts with the first statement inside of main().  Functions are typically written to do a very specific job.
+
+3) What symbol do statements in C++ end with?
+
+A semicolon: ";"
+
