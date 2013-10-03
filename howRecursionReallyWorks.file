@@ -32,3 +32,5 @@ When the CPU tries to call function add(), it assigns x = 1, and y = multiply(2,
 
 This explaination comes from: http://www.learncpp.com/cpp-tutorial/14-a-first-look-at-functions/
 
+This short hand will help make sense of any recursion:
+add(1, multiply(2, 3)) => add(1, 6) => 7
